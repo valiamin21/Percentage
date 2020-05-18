@@ -18,7 +18,7 @@ public class ExamModel {
     }
 
    public double calculateMainPercent(){
-        return ((rightNo + wrongNo / 3) * 100) / questionsNo;
+       return (((3 * rightNo) - wrongNo) / (3 * questionsNo)) * 100;
    }
 
    public double calculatePercentWithoutWrongs(){
@@ -26,6 +26,6 @@ public class ExamModel {
    }
 
    public double calculatePercentIfWrongsWasRight(){
-        return ((rightNo + wrongNo) * 100) / questionsNo;
+       return ((rightNo + wrongNo) * 100) / questionsNo;
    }
 }
