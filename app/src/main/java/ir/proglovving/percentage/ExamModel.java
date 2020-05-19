@@ -9,12 +9,24 @@ public class ExamModel {
         this.questionsNo = questionsNo;
     }
 
+    public double getQuestionsNo(){
+        return questionsNo;
+    }
+
     public void setWrongNo(int wrongNo){
         this.wrongNo = wrongNo;
     }
 
+    public double getWrongNo(){
+        return wrongNo;
+    }
+
     public void setRightNo(int rightNo){
         this.rightNo = rightNo;
+    }
+
+    public double getRightNo(){
+        return rightNo;
     }
 
    public double calculateMainPercent(){
