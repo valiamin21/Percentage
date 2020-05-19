@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/primaryLightColor" android:width="2dp"/>
+            <corners android:radius="@dimen/percent_text_radius"/>
+            <padding android:bottom="@dimen/standard_margin_small" android:left="@dimen/standard_margin" android:right="@dimen/standard_margin" android:top="@dimen/standard_margin_small" />
+        </shape>
+    </item>
+</selector>
