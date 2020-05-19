@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Percentage</string>
+    <string name="app_name">درصدگیر کنکور</string>
+
+    <string name="questions_number_colon">تعداد سوالات:</string>
+    <string name="right_answers_number_colon">تعداد پاسخ صحیح:</string>
+    <string name="wrong_answers_number_colon">تعداد پاسخ غلط:</string>
+    <string name="calculate_points">محاسبه‌ی نمره</string>
+    <string name="main_percent_colon">درصد اصلی:</string>
+    <string name="percent_without_wrongs_colon">اگر غلطی نداشتید:</string>
+    <string name="percent_if_wrongs_was_right_colon">اگر تست‌های غلط درست بودند:</string>
 </resources>
