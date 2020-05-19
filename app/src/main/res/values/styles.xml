@@ -20,4 +20,13 @@
         <item name="android:textSize">@dimen/normal_font_size</item>
     </style>
 
+    <style name="PercentTextViewsStyle">
+        <item name="android:layout_marginLeft">@dimen/standard_margin_small</item>
+        <item name="android:layout_marginRight">@dimen/standard_margin_small</item>
+        <item name="android:background">@drawable/selector_percent_text</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/normal_font_size</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+
 </resources>

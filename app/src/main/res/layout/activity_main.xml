@@ -134,13 +134,9 @@
 
                 <ir.proglovving.percentage.CusTextView
                     android:id="@+id/tv_mainPercent"
+                    style="@style/PercentTextViewsStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/standard_margin_small"
-                    android:layout_marginRight="@dimen/standard_margin_small"
-                    android:background="@drawable/selector_percent_text"
-                    android:textColor="@color/primaryTextColor"
-                    android:textSize="@dimen/normal_font_size" />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <LinearLayout
@@ -162,13 +158,9 @@
 
                 <ir.proglovving.percentage.CusTextView
                     android:id="@+id/tv_percentWithoutWrongs"
+                    style="@style/PercentTextViewsStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/standard_margin_small"
-                    android:layout_marginRight="@dimen/standard_margin_small"
-                    android:background="@drawable/selector_percent_text"
-                    android:textColor="@color/primaryTextColor"
-                    android:textSize="@dimen/normal_font_size" />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <LinearLayout
@@ -190,13 +182,9 @@
 
                 <ir.proglovving.percentage.CusTextView
                     android:id="@+id/tv_percentIfWrongsWasRight"
+                    style="@style/PercentTextViewsStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/standard_margin_small"
-                    android:layout_marginRight="@dimen/standard_margin_small"
-                    android:background="@drawable/selector_percent_text"
-                    android:textColor="@color/primaryTextColor"
-                    android:textSize="@dimen/normal_font_size" />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
         </LinearLayout>
