@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/table_horizontal_margin"
+    android:layout_marginVertical="@dimen/standard_margin"
+    app:cardCornerRadius="@dimen/app_radius"
+    app:cardElevation="0dp"
+    android:layout_gravity="center_horizontal">
+
+    <ir.proglovving.percentage.CusTextView
+        android:id="@+id/txt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/error_toast_background"
+        android:gravity="center"
+        android:padding="@dimen/standard_margin"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/normal_font_size"
+        tools:text="خطا! ورودی اشتباه" />
+
+</androidx.cardview.widget.CardView>
