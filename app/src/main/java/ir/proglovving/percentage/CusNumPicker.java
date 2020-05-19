@@ -1,6 +1,7 @@
 package ir.proglovving.percentage;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
+import androidx.core.content.ContextCompat;
 
 public class CusNumPicker extends NumberPicker {
 
@@ -62,7 +64,9 @@ public class CusNumPicker extends NumberPicker {
 
     private void setTypeFace(View view) {
         if (view instanceof TextView) {
-            ((TextView) view).setTypeface(Utilities.getAppTypeface(getContext()));
+            TextView tv = (TextView) view;
+            tv.setTypeface(Utilities.getAppTypeface(getContext()));
+            tv.setTextColor(ContextCompat.getColor(getContext(),R.color.primaryTextColor));
         }
     }
 }
