@@ -85,6 +85,6 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
 
     @Override
     public void showErrorToast(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+        Utilities.showErrorToast(this,message,Toast.LENGTH_SHORT);
     }
 }
