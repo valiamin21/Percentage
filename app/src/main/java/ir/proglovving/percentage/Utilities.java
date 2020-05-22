@@ -46,5 +46,7 @@ public class Utilities {
         showErrorToast(context,context.getString(message),length);
     }
 
+    // TODO: 5/22/20 fixing bug of update model values while inputting percents with mobile soft keyboard
+    // TODO: 5/22/20 saving exams for showing it later
 
 }
