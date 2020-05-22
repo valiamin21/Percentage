@@ -10,7 +10,7 @@
     app:cardElevation="0dp"
     android:layout_gravity="center_horizontal">
 
-    <ir.proglovving.percentage.CusTextView
+    <ir.proglovving.percentage.custom_views.CusTextView
         android:id="@+id/txt_message"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

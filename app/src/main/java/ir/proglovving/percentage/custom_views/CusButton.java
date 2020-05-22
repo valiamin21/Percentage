@@ -1,9 +1,11 @@
-package ir.proglovving.percentage;
+package ir.proglovving.percentage.custom_views;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
 import androidx.appcompat.widget.AppCompatButton;
+
+import ir.proglovving.percentage.Utilities;
 
 public class CusButton extends AppCompatButton {
     public CusButton(Context context) {

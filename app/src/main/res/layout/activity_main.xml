@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="rtl"
-    tools:context=".MainActivity">
+    tools:context=".views.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -41,13 +41,13 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <ir.proglovving.percentage.CusTextView
+                    <ir.proglovving.percentage.custom_views.CusTextView
                         style="@style/AppTheme.MyNumberPickerTitlesStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/questions_number_colon" />
 
-                    <ir.proglovving.percentage.CusNumPicker
+                    <ir.proglovving.percentage.custom_views.CusNumPicker
                         android:id="@+id/np_questions"
                         style="@style/MyNumberPickerTheme"
                         android:layout_width="match_parent"
@@ -63,13 +63,13 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <ir.proglovving.percentage.CusTextView
+                    <ir.proglovving.percentage.custom_views.CusTextView
                         style="@style/AppTheme.MyNumberPickerTitlesStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/right_answers_number_colon" />
 
-                    <ir.proglovving.percentage.CusNumPicker
+                    <ir.proglovving.percentage.custom_views.CusNumPicker
                         android:id="@+id/np_rights"
                         style="@style/MyNumberPickerTheme"
                         android:layout_width="match_parent"
@@ -85,13 +85,13 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <ir.proglovving.percentage.CusTextView
+                    <ir.proglovving.percentage.custom_views.CusTextView
                         style="@style/AppTheme.MyNumberPickerTitlesStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/wrong_answers_number_colon" />
 
-                    <ir.proglovving.percentage.CusNumPicker
+                    <ir.proglovving.percentage.custom_views.CusNumPicker
                         android:id="@+id/np_wrongs"
                         style="@style/MyNumberPickerTheme"
                         android:layout_width="match_parent"
@@ -107,7 +107,7 @@
                 android:layout_margin="@dimen/standard_margin_x"
                 android:background="?android:listDivider" />
 
-            <ir.proglovving.percentage.CusButton
+            <ir.proglovving.percentage.custom_views.CusButton
                 android:id="@+id/btn_calculate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <ir.proglovving.percentage.CusTextView
+                <ir.proglovving.percentage.custom_views.CusTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/standard_margin_small"
@@ -132,7 +132,7 @@
                     android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/normal_font_size" />
 
-                <ir.proglovving.percentage.CusTextView
+                <ir.proglovving.percentage.custom_views.CusTextView
                     android:id="@+id/tv_mainPercent"
                     style="@style/PercentTextViewsStyle"
                     android:layout_width="wrap_content"
@@ -146,7 +146,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <ir.proglovving.percentage.CusTextView
+                <ir.proglovving.percentage.custom_views.CusTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/standard_margin_small"
@@ -156,7 +156,7 @@
                     android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/normal_font_size" />
 
-                <ir.proglovving.percentage.CusTextView
+                <ir.proglovving.percentage.custom_views.CusTextView
                     android:id="@+id/tv_percentWithoutWrongs"
                     style="@style/PercentTextViewsStyle"
                     android:layout_width="wrap_content"
@@ -170,7 +170,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <ir.proglovving.percentage.CusTextView
+                <ir.proglovving.percentage.custom_views.CusTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/standard_margin_small"
@@ -180,7 +180,7 @@
                     android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/normal_font_size" />
 
-                <ir.proglovving.percentage.CusTextView
+                <ir.proglovving.percentage.custom_views.CusTextView
                     android:id="@+id/tv_percentIfWrongsWasRight"
                     style="@style/PercentTextViewsStyle"
                     android:layout_width="wrap_content"

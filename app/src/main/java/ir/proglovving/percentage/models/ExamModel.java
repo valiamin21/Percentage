@@ -1,4 +1,4 @@
-package ir.proglovving.percentage;
+package ir.proglovving.percentage.models;
 
 public class ExamModel {
     private double questionsNo;

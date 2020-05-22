@@ -1,4 +1,4 @@
-package ir.proglovving.percentage;
+package ir.proglovving.percentage.views;
 
 public interface ExamBaseView {
     void updateUi(String mainPercent, String percentWithoutWrongs, String percentIfWrongsWasRight);

@@ -1,4 +1,4 @@
-package ir.proglovving.percentage;
+package ir.proglovving.percentage.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -9,6 +9,11 @@ import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import ir.proglovving.percentage.controllers.ExamController;
+import ir.proglovving.percentage.models.ExamModel;
+import ir.proglovving.percentage.R;
+import ir.proglovving.percentage.Utilities;
 
 public class MainActivity extends AppCompatActivity implements ExamBaseView {
     private static final String TAG = "MainActivity";

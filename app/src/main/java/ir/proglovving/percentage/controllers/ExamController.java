@@ -1,6 +1,9 @@
-package ir.proglovving.percentage;
+package ir.proglovving.percentage.controllers;
 
 import java.text.DecimalFormat;
+
+import ir.proglovving.percentage.models.ExamModel;
+import ir.proglovving.percentage.views.ExamBaseView;
 
 public class ExamController {
     private ExamBaseView baseView;
