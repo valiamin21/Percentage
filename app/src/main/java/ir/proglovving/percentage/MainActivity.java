@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
     private NumberPicker.OnValueChangeListener onValueChangeListener = new NumberPicker.OnValueChangeListener() {
         @Override
         public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-            controller.onNumPickersScroll();
+            controller.onNumPickersValueChanged();
         }
     };
 

@@ -32,7 +32,7 @@ public class ExamController {
         }
     }
 
-    public void onNumPickersScroll(){
+    public void onNumPickersValueChanged(){
         baseView.updateUi("---", "---", "---");
     }
 
