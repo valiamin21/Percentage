@@ -8,4 +8,6 @@
     <string name="main_percent_colon">درصد اصلی:</string>
     <string name="percent_without_wrongs_colon">اگر غلطی نداشتید:</string>
     <string name="percent_if_wrongs_was_right_colon">اگر تست‌های غلط درست بودند:</string>
+
+    <string name="exams_history">تاریخچه آزمون‌ها</string>
 </resources>

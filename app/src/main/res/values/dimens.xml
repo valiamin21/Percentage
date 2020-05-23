@@ -15,6 +15,10 @@
     <dimen name="app_button_radius">5dp</dimen>
     <dimen name="percent_text_radius">15dp</dimen>
     <dimen name="app_radius">5dp</dimen>
+    <dimen name="bottom_sheet_radius">15dp</dimen>
 
     <dimen name="table_horizontal_margin">40dp</dimen>
+
+    <dimen name="bottom_sheet_pick_height">60dp</dimen>
+    <dimen name="bottom_sheet_height">400dp</dimen>
 </resources>
