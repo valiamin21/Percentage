@@ -190,5 +190,47 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
+    <LinearLayout
+        android:id="@+id/bottom_sheet_patent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_sheet_height"
+        android:background="@drawable/selector_bottom_sheet"
+        android:paddingLeft="@dimen/standard_margin"
+        android:paddingRight="@dimen/standard_margin"
+        app:behavior_peekHeight="@dimen/bottom_sheet_pick_height"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_sheet_pick_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ir.proglovving.percentage.custom_views.CusTextView
+                android:id="@+id/txt_bottomSheetTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bottom_sheet_pick_height"
+                android:gravity="center"
+                android:text="@string/exams_history"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/normal_font_size" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_close_open_bottom_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bottom_sheet_pick_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_keyboard_arrow_up_black_24dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFF"/>
+
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
