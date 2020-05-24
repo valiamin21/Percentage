@@ -232,5 +232,23 @@
             android:layout_height="1dp"
             android:background="#FFF"/>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_examsHistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="1"
+            app:reverseLayout="false"/>
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_saveExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/standard_margin_x"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="bottom|end"
+        app:icon="@drawable/ic_add_black_24dp"
+        android:text="@string/save_exam"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
