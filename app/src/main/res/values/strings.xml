@@ -10,4 +10,11 @@
     <string name="percent_if_wrongs_was_right_colon">اگر تست‌های غلط درست بودند:</string>
 
     <string name="exams_history">تاریخچه آزمون‌ها</string>
+    <string name="save_exam">ذخیره آزمون</string>
+
+    <string name="please_enter_exam_name">لطفا نام آزمون‌را وارد کنید!</string>
+    <string name="exam_name">نام آزمون</string>
+    <string name="cancel">لغو</string>
+
+    <string name="got_it">فهمیدم</string>
 </resources>
