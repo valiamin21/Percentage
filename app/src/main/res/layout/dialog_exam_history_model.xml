@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="@dimen/standard_margin">
+
+    <ir.proglovving.percentage.custom_views.CusTextView
+        android:id="@+id/tv_examName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/large_font_size"
+        tools:text="امتحان ریاضی" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_x"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin_small"
+            android:layout_marginRight="@dimen/standard_margin_small"
+            android:text="@string/questions_number_colon"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/normal_font_size" />
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:id="@+id/tv_questionsNo"
+            style="@style/PercentTextViewsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_x"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin_small"
+            android:layout_marginRight="@dimen/standard_margin_small"
+            android:text="@string/right_answers_number_colon"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/normal_font_size" />
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:id="@+id/tv_rightsNo"
+            style="@style/PercentTextViewsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_x"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin_small"
+            android:layout_marginRight="@dimen/standard_margin_small"
+            android:text="@string/wrong_answers_number_colon"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/normal_font_size" />
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:id="@+id/tv_wrongsNo"
+            style="@style/PercentTextViewsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_x"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin_small"
+            android:layout_marginRight="@dimen/standard_margin_small"
+            android:text="@string/main_percent_colon"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/normal_font_size" />
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:id="@+id/tv_mainPercent"
+            style="@style/PercentTextViewsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_x"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin_small"
+            android:layout_marginRight="@dimen/standard_margin_small"
+            android:text="@string/percent_without_wrongs_colon"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/normal_font_size" />
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:id="@+id/tv_percentWithoutWrongs"
+            style="@style/PercentTextViewsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin_x"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin_small"
+            android:layout_marginRight="@dimen/standard_margin_small"
+            android:text="@string/percent_if_wrongs_was_right_colon"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/normal_font_size" />
+
+        <ir.proglovving.percentage.custom_views.CusTextView
+            android:id="@+id/tv_percentIfWrongsWasRight"
+            style="@style/PercentTextViewsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ir.proglovving.percentage.custom_views.CusButton
+        android:id="@+id/gotIt_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:text="@string/got_it" />
+
+</LinearLayout>
