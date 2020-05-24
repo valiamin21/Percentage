@@ -1,9 +1,18 @@
 package ir.proglovving.percentage.models;
 
 public class ExamModel {
+    private int id;
     private double questionsNo;
     private double wrongNo;
     private double rightNo;
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getId(){
+        return id;
+    }
 
     public void setQuestionsNo(int questionsNo){
         this.questionsNo = questionsNo;
