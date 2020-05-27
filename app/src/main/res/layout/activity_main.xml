@@ -197,20 +197,20 @@
         android:background="@drawable/selector_bottom_sheet"
         android:paddingLeft="@dimen/standard_margin"
         android:paddingRight="@dimen/standard_margin"
-        app:behavior_peekHeight="@dimen/bottom_sheet_pick_height"
+        app:behavior_peekHeight="@dimen/bottom_sheet_peek_height"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/bottom_sheet_pick_height"
+            android:layout_height="@dimen/bottom_sheet_peek_height"
             android:gravity="center"
             android:orientation="horizontal">
 
             <ir.proglovving.percentage.custom_views.CusTextView
                 android:id="@+id/txt_bottomSheetTitle"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/bottom_sheet_pick_height"
+                android:layout_height="@dimen/bottom_sheet_peek_height"
                 android:gravity="center"
                 android:text="@string/exams_history"
                 android:textColor="@color/primaryTextColor"
@@ -219,7 +219,7 @@
             <ImageButton
                 android:id="@+id/imgBtn_close_open_bottom_sheet"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/bottom_sheet_pick_height"
+                android:layout_height="@dimen/bottom_sheet_peek_height"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/standard_margin"
                 android:layout_marginRight="@dimen/standard_margin"

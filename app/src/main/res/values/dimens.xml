@@ -19,6 +19,6 @@
 
     <dimen name="table_horizontal_margin">40dp</dimen>
 
-    <dimen name="bottom_sheet_pick_height">60dp</dimen>
+    <dimen name="bottom_sheet_peek_height">60dp</dimen>
     <dimen name="bottom_sheet_height">400dp</dimen>
 </resources>

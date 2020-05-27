@@ -47,6 +47,4 @@ public class Utilities {
     }
 
     // TODO: 5/27/20 toast when exam has been saved
-    // TODO: 5/27/20 pick -> peek (typing error)
-
 }
