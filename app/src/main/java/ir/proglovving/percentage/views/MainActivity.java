@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
     private BottomSheetBehavior bottomSheetBehavior;
     private RecyclerView examsHistoryRecyclerView;
     private ExamsHistoryRecyclerAdapter examsHistoryRecyclerAdapter;
-    private ExtendedFloatingActionButton saveExamEFAB;
+    private ExtendedFloatingActionButton saveExamFAB;
 
     private Dialog dialog;
     private EditText examNameDialogEditText;
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
             }
         });
 
-        saveExamEFAB.setOnClickListener(new View.OnClickListener() {
+        saveExamFAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 controller.setData(questionsNumPicker.getValue(), rightsNumPicker.getValue(), wrongsNumPicker.getValue());
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
                 if (bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
                     bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                 } else if (bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
-                    saveExamEFAB.hide();
+                    saveExamFAB.hide();
                     bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
                 }
             }
@@ -145,11 +145,11 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
                 switch (newState) {
                     case BottomSheetBehavior.STATE_EXPANDED:
                         rotateBottomSheetOpenCloseImage(180);
-                        saveExamEFAB.hide();
+                        saveExamFAB.hide();
                         break;
                     case BottomSheetBehavior.STATE_COLLAPSED:
                         rotateBottomSheetOpenCloseImage(0);
-                        saveExamEFAB.show();
+                        saveExamFAB.show();
                         break;
                 }
             }
@@ -204,8 +204,8 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
         bottomSheetTitle = findViewById(R.id.txt_bottomSheetTitle);
 
         examsHistoryRecyclerView = findViewById(R.id.recyclerView_examsHistory);
-        saveExamEFAB = findViewById(R.id.fab_saveExam);
-        saveExamEFAB.setTypeface(Utilities.getAppTypeface(this));
+        saveExamFAB = findViewById(R.id.fab_saveExam);
+        saveExamFAB.setTypeface(Utilities.getAppTypeface(this));
     }
 
     private void setupNumPickers(NumberPicker numberPicker) {
