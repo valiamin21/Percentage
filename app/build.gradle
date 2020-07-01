@@ -8,7 +8,7 @@ android {
         applicationId "ir.proglovving.percentage"
         minSdkVersion 20
         targetSdkVersion 29
-        versionCode 2
+        versionCode 3
         versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
