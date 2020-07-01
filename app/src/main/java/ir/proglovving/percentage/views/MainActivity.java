@@ -226,8 +226,7 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
 
     @Override
     public void showErrorToast(String message) {
-        // TODO: 7/1/20 change to LENGTH_LONG
-        Utilities.showErrorToast(this, message, Toast.LENGTH_SHORT);
+        Utilities.showErrorToast(this, message, Toast.LENGTH_LONG);
     }
 
     @Override
