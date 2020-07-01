@@ -1,6 +1,7 @@
 package ir.proglovving.percentage.controllers;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 
 import java.text.DecimalFormat;
 
@@ -68,5 +69,12 @@ public class ExamController {
             baseView.refreshExamHistoryRecyclerView();
             baseView.showSuccessToast(R.string.saved_in_exams_history);
         }
+    }
+
+    public void rate(){
+        if (baseView.isBazaarInstalled())
+            baseView.rateInBazaar();
+        else
+            baseView.showErrorToast(R.string.please_install_cafebazaar);
     }
 }

@@ -18,4 +18,11 @@
     <string name="cancel">لغو</string>
 
     <string name="got_it">فهمیدم</string>
+
+    <string name="exit">خروج</string>
+    <string name="exit_message">می‌خوای بری؟</string>
+    <string name="yeah">آره</string>
+    <string name="no">نه</string>
+    <string name="rate">نظر در کافه‌بازار</string>
+    <string name="please_install_cafebazaar">لطفا کافه‌بازار را نصب کنید!</string>
 </resources>

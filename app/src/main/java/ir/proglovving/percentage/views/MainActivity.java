@@ -7,6 +7,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.animation.ValueAnimator;
 import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,6 +28,7 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
 import ir.proglovving.percentage.OnBottomSheetStateChanged;
 import ir.proglovving.percentage.adapters.ExamsHistoryRecyclerAdapter;
 import ir.proglovving.percentage.controllers.ExamController;
+import ir.proglovving.percentage.custom_views.CustomDialogBuilder;
 import ir.proglovving.percentage.models.ExamModel;
 import ir.proglovving.percentage.R;
 import ir.proglovving.percentage.Utilities;
@@ -88,6 +93,31 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        new CustomDialogBuilder(this)
+                .setTitle(getString(R.string.exit))
+                .setMessage(getString(R.string.exit_message))
+                .setPositive(getString(R.string.yeah), new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        MainActivity.super.onBackPressed();
+                    }
+                })
+                .setNegative(R.string.rate, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        controller.rate();
+                    }
+                })
+                .setCancel(getString(R.string.no), new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                    }
+                })
+                .create().show();
     }
 
     private void setupExamSaveDialog() {
@@ -236,12 +266,12 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
 
     @Override
     public void showSuccessToast(String message) {
-        Utilities.showSuccessToast(this,message,Toast.LENGTH_SHORT);
+        Utilities.showSuccessToast(this, message, Toast.LENGTH_SHORT);
     }
 
     @Override
     public void showSuccessToast(int message) {
-       Utilities.showSuccessToast(this,message,Toast.LENGTH_SHORT);
+        Utilities.showSuccessToast(this, message, Toast.LENGTH_SHORT);
     }
 
     @Override
@@ -257,5 +287,23 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
     @Override
     public void refreshExamHistoryRecyclerView() {
         examsHistoryRecyclerAdapter.setExamHistoryModelList(ExamsHistoryOpenHelper.getInstance(this).getExamHistoryModelList());
+    }
+
+    @Override
+    public boolean isBazaarInstalled() {
+        try {
+            getPackageManager().getPackageInfo("com.farsitel.bazaar", 0);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
+    @Override
+    public void rateInBazaar() {
+        Intent intent = new Intent(Intent.ACTION_EDIT);
+        intent.setData(Uri.parse("bazaar://details?id=" + getPackageName()));
+        intent.setPackage("com.farsitel.bazaar");
+        startActivity(intent);
     }
 }

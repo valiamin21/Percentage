@@ -11,4 +11,6 @@ public interface ExamBaseView {
     void dismissDialog();
     void clearDialog();
     void refreshExamHistoryRecyclerView();
+    boolean isBazaarInstalled();
+    void rateInBazaar();
 }
