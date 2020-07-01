@@ -66,6 +66,7 @@ public class ExamController {
             baseView.dismissDialog();
             baseView.clearDialog();
             baseView.refreshExamHistoryRecyclerView();
+            baseView.showSuccessToast(R.string.saved_in_exams_history);
         }
     }
 }

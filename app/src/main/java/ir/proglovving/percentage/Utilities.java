@@ -46,5 +46,19 @@ public class Utilities {
         showErrorToast(context,context.getString(message),length);
     }
 
-    // TODO: 5/27/20 toast when exam has been saved
+    public static void showSuccessToast(Context context, String message, int length){
+        Toast appToast = new Toast(context);
+
+        appToast.setView(LayoutInflater.from(context).inflate(R.layout.layout_error_toast, null));
+        TextView appToastTextView = appToast.getView().findViewById(R.id.txt_message);
+        appToast.setDuration(length);
+        appToastTextView.setText(message);
+        appToastTextView.setBackgroundColor(ContextCompat.getColor(context, R.color.success_toast_background));
+
+        appToast.show();
+    }
+
+    public static void showSuccessToast(Context context, @StringRes int message, int length){
+        showSuccessToast(context, context.getString(message),length);
+    }
 }

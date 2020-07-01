@@ -14,6 +14,7 @@
     <color name="wrong_questions_numPicker_background">#E91E63</color>
 
     <color name="error_toast_background">#FF5252</color>
+    <color name="success_toast_background">#0ea960</color>
 
     <color name="bottom_sheet_background_color">#EECDDC39</color>
 </resources>
