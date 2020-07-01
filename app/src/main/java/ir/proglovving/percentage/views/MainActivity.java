@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.animation.ValueAnimator;
 import android.app.Dialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -119,9 +120,12 @@ public class MainActivity extends AppCompatActivity implements ExamBaseView {
         bottomSheetOpenCloseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
+                String TAG = "MainActivity";
+                Log.i(TAG, "onClick: click shod");
                 if (bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
                     bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
                 } else if (bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
+                    saveExamEFAB.hide();
                     bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
                 }
             }
