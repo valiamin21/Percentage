@@ -6,7 +6,7 @@
     android:layoutDirection="rtl"
     android:padding="@dimen/standard_margin">
 
-    <ir.proglovving.percentage.custom_views.CusEditText
+    <ir.proglovving.cfviews.CfEditText
         android:id="@+id/exam_name_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
         android:gravity="center"
         android:layout_marginTop="@dimen/standard_margin">
 
-        <ir.proglovving.percentage.custom_views.CusButton
+        <ir.proglovving.cfviews.CfButton
             android:id="@+id/save_exam_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:layout_marginHorizontal="@dimen/standard_margin_x"
             android:layout_marginVertical="@dimen/standard_margin"/>
 
-        <ir.proglovving.percentage.custom_views.CusButton
+        <ir.proglovving.cfviews.CfButton
             android:id="@+id/cancel_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

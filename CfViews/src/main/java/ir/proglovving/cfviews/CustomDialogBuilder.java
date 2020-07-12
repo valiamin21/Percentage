@@ -1,4 +1,4 @@
-package ir.proglovving.percentage.custom_views;
+package ir.proglovving.cfviews;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -7,8 +7,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.StringRes;
-
-import ir.proglovving.percentage.R;
 
 
 public class CustomDialogBuilder {

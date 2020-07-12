@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.animation.ValueAnimator;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -28,7 +27,7 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
 import ir.proglovving.percentage.OnBottomSheetStateChanged;
 import ir.proglovving.percentage.adapters.ExamsHistoryRecyclerAdapter;
 import ir.proglovving.percentage.controllers.ExamController;
-import ir.proglovving.percentage.custom_views.CustomDialogBuilder;
+import ir.proglovving.cfviews.CustomDialogBuilder;
 import ir.proglovving.percentage.models.ExamModel;
 import ir.proglovving.percentage.R;
 import ir.proglovving.percentage.Utilities;

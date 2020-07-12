@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="@dimen/standard_margin">
 
-    <ir.proglovving.percentage.custom_views.CusTextView
+    <ir.proglovving.cfviews.CfTextView
         android:id="@+id/tv_examName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/standard_margin_small"
@@ -38,7 +38,7 @@
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/normal_font_size" />
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:id="@+id/tv_questionsNo"
             style="@style/PercentTextViewsStyle"
             android:layout_width="wrap_content"
@@ -52,7 +52,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/standard_margin_small"
@@ -62,7 +62,7 @@
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/normal_font_size" />
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:id="@+id/tv_rightsNo"
             style="@style/PercentTextViewsStyle"
             android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/standard_margin_small"
@@ -86,7 +86,7 @@
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/normal_font_size" />
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:id="@+id/tv_wrongsNo"
             style="@style/PercentTextViewsStyle"
             android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/standard_margin_small"
@@ -110,7 +110,7 @@
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/normal_font_size" />
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:id="@+id/tv_mainPercent"
             style="@style/PercentTextViewsStyle"
             android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/standard_margin_small"
@@ -134,7 +134,7 @@
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/normal_font_size" />
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:id="@+id/tv_percentWithoutWrongs"
             style="@style/PercentTextViewsStyle"
             android:layout_width="wrap_content"
@@ -148,7 +148,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/standard_margin_small"
@@ -158,14 +158,14 @@
             android:textColor="@color/primaryTextColor"
             android:textSize="@dimen/normal_font_size" />
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:id="@+id/tv_percentIfWrongsWasRight"
             style="@style/PercentTextViewsStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <ir.proglovving.percentage.custom_views.CusButton
+    <ir.proglovving.cfviews.CfButton
         android:id="@+id/gotIt_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

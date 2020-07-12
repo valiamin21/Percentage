@@ -1,2 +1,3 @@
+include ':CfViews'
 rootProject.name='Percentage'
 include ':app'

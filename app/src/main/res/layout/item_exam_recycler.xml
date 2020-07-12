@@ -27,7 +27,7 @@
             android:layout_gravity="start"
             android:layout_marginHorizontal="@dimen/standard_margin_small"/>
 
-        <ir.proglovving.percentage.custom_views.CusTextView
+        <ir.proglovving.cfviews.CfTextView
             android:id="@+id/tv_examName"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -42,7 +42,7 @@
 
 
 
-    <ir.proglovving.percentage.custom_views.CusTextView
+    <ir.proglovving.cfviews.CfTextView
         android:id="@+id/tv_examPercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
