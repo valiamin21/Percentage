@@ -12,7 +12,6 @@
         <item name="colorControlNormal">#FFF</item>
         <item name="android:layout_marginRight">@dimen/standard_margin_small</item>
         <item name="android:layout_marginLeft">@dimen/standard_margin_small</item>
-        <item name="android:descendantFocusability">blocksDescendants</item>
     </style>
 
     <style name="AppTheme.MyNumberPickerTitlesStyle">
