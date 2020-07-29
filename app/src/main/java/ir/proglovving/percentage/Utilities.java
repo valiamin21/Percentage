@@ -61,4 +61,8 @@ public class Utilities {
     public static void showSuccessToast(Context context, @StringRes int message, int length){
         showSuccessToast(context, context.getString(message),length);
     }
+
+    // TODO: 7/29/20 showing empty message in exams history
+    // TODO: 7/29/20 modifying exam history items CardView design
+    // TODO: 7/29/20 showing undo SnackBar while deleting an exam
 }
